@@ -1,0 +1,8 @@
+{
+    "powershell.powerShellExePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.developer.editorServicesLogLevel": "Normal",
+    "powershell.integratedConsole.showOnStartup": false,
+    "suggest.autoTrigger": "always",
+    "suggest.minTriggerInputLength": 1
+  }
