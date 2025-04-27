@@ -57,21 +57,19 @@ These will install additional plugins and language support for PowerShell develo
 
 The two scripts (`install-apps.ps1` and `install-postreboot.ps1`) will install the following:
 
-| Command                                                   | Purpose
-|--------------------------------------------------------------------------------------------------
-| `winget install --id git.git`                             | Git is required for lazy plugins 
-| `winget install --id Microsoft.WindowsTerminal`           | Windows Terminal setup 
-| `winget install --id DEVCOM.JetBrainsMonoNerdFont`        | NerdFont needed for icons 
-| `winget install --id DEVCOM.Lua`                          | Lua language support for Neovim 
-| `winget install --id Neovim.Neovim`                       | Neovim itself 
-| `winget install --id sharkdp.fd`                          | `fd` is used for Telescope search functionality 
-| `winget install --id BurntSushi.ripgrep.GNU`              | `ripgrep` is used for fast searching 
-| `winget install --id OpenJS.NodeJS`                       | `npm` is required for some extensions 
-| `winget install -e --id BrechtSanders.WinLibs.POSIX.UCRT` | C compiler needed for Treesitter support 
-| `winget install python3`                                  | Python 3 is required for Python plugins 
-|---------------------------------------------------------------------------------------------------
-| `python.exe -m pip install --upgrade pip`                 | Upgrades pip 
-| `python.exe -m pip install pynvim`                        | Required for full UltiSnips and Python plugins 
-| `npm install -g neovim`                                   | Ensures Node.js-based plugins (like Coc.nvim extensions) work
+`winget install --id git.git`                              
+`winget install --id Microsoft.WindowsTerminal`            
+`winget install --id DEVCOM.JetBrainsMonoNerdFont`         
+`winget install --id DEVCOM.Lua`                          
+`winget install --id Neovim.Neovim`                       
+`winget install --id sharkdp.fd`                          
+`winget install --id BurntSushi.ripgrep.GNU`              
+`winget install --id OpenJS.NodeJS`                       
+`winget install -e --id BrechtSanders.WinLibs.POSIX.UCRT` 
+`winget install python3`                                  
+
+`python.exe -m pip install --upgrade pip`                  
+`python.exe -m pip install pynvim`                        
+`npm install -g neovim`                                   
 
 
