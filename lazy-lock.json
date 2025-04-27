@@ -1,8 +1,8 @@
 {
   "coc.nvim": { "branch": "release", "commit": "3c8d5fa4fd8f4360aa6af949775fc9a26880e2b3" },
+  "gruvbox.nvim": { "branch": "main", "commit": "c54db7f7e67832fbdd0ac14633f62c8a6997ddcf" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "nvim-treesitter": { "branch": "master", "commit": "4c7509e7b06cea99065e8d4a20d30e6a2e5cd924" },
-  "tokyonight.nvim": { "branch": "main", "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3" },
   "ultisnips": { "branch": "master", "commit": "dbc458e110bb49299da76ec53f8b09b4f6dce28a" },
   "vim-snippets": { "branch": "master", "commit": "f0a3184d9f90b96b044d5914625a25c554d7f301" }
 }
