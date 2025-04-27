@@ -1,8 +1,30 @@
 {
-    "powershell.powerShellExePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    "powershell.scriptAnalysis.enable": true,
-    "powershell.developer.editorServicesLogLevel": "Normal",
-    "powershell.integratedConsole.showOnStartup": false,
-    "suggest.autoTrigger": "always",
-    "suggest.minTriggerInputLength": 1
-  }
+  "powershell.powerShellExePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.developer.editorServicesLogLevel": "Normal",
+  "powershell.integratedConsole.showOnStartup": false,
+  "suggest.autoTrigger": "always",
+  "suggest.minTriggerInputLength": 1,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "snippets.ultisnips.enable": true,
+  "snippets.priority": 90,
+  "snippets.ultisnips.directories": ["UltiSnips"],
+  "languageserver": {
+    "powershell": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-Command",
+        "& { Import-Module 'C:/dev/PSES-Release/PowerShellEditorServices/PowerShellEditorServices.psd1'; $startArgs = @{ HostName = 'coc.nvim'; HostProfileId = '0'; HostVersion = '1.0.0'; BundledModulesPath = 'C:/dev/PSES-Release/PowerShellEditorServices/PowerShellEditorServices'; EnableConsoleRepl = $true; LogPath = '$env:TEMP/PSES.log'; SessionDetailsPath = '$env:TEMP/PSES.session.json'; Stdio = $true; FeatureFlags = @('PSReadLine','ScriptAnalysis') }; Start-EditorServices @startArgs }"
+      ],
+      "filetypes": ["ps1", "psm1"],
+      "trace.server": "verbose",
+      "rootPatterns": [".git/"]
+    }
+  },
+  "snippets.ultisnips.pythonPrompt": false
+}
+

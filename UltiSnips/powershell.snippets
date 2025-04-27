@@ -1,0 +1,76 @@
+snippet try "try/catch block"
+try {
+    ${1}
+} catch {
+    ${2}
+}
+endsnippet
+
+snippet for "for loop"
+for ($${1:i} = 0; $${1:i} -lt ${2:10}; $${1:i}++) {
+    ${0}
+}
+endsnippet
+
+snippet if "if block"
+if (${1}) {
+    ${0}
+}
+endsnippet
+
+snippet ife "if/else block"
+if (${1}) {
+    ${2}
+} else {
+    ${0}
+}
+endsnippet
+
+snippet switch "switch block"
+switch (${1}) {
+    ${0}
+}
+endsnippet
+
+snippet function "function block"
+function ${1:FunctionName} {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$${2:ParameterName}
+    )
+
+    ${0}
+}
+endsnippet
+
+snippet param "param block"
+param (
+    [Parameter(Mandatory = $true)]
+    [string]$${1:ParameterName}
+)
+${0}
+endsnippet
+
+snippet while "while loop"
+while (${1}) {
+    ${0}
+}
+endsnippet
+
+snippet dowhile "do/while loop"
+do {
+    ${0}
+} while (${1})
+endsnippet
+
+snippet foreach "foreach loop"
+foreach ($${1:item} in ${2:collection}) {
+    ${0}
+}
+endsnippet
+
+snippet class "class block"
+class ${1:ClassName} {
+    ${0}
+}
+endsnippet
