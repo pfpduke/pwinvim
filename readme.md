@@ -44,6 +44,7 @@ This will place your Neovim configuration where Neovim expects it:
 Open Neovim and run the following commands:
 
 ```shell
+:lazy sync
 :InstallPSES
 :CocInstall coc-powershell
 :TSInstall powershell
