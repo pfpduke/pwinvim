@@ -36,9 +36,7 @@ Open Neovim and run the following commands:
 
 ```shell
 :lazy sync
-:CocInstall coc-powershell
-:CocInstall coc-snippets
-:CocInstall coc-json
+:CocInstall coc-powershell coc-snippets coc-json
 :TSInstall powershell
 ```
 
