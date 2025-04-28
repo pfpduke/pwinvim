@@ -49,7 +49,7 @@ if ($pythonCheck) {
 else {
     Write-Host "Installing Python..." -ForegroundColor Yellow
     try {
-        winget install python3 --accept-package-agreements --accept-source-agreements
+        winget install python3
         Write-Host "Successfully installed Python." -ForegroundColor Green
     }
     catch {
@@ -62,4 +62,5 @@ else {
 Write-Host ""
 Write-Host "IMPORTANT: Please close and reopen your terminal before running the next script!" -ForegroundColor Red
 Write-Host "Also change you windows terminal font to JetBrainsMonoNL Nerd Font in settings/profile/windows powershell/appearace" -ForegroundColor Yellow
+Read-Host "Press enter to exit"
 exit

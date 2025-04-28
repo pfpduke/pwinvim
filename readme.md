@@ -74,3 +74,14 @@ The two scripts (`install-apps.ps1` and `install-postreboot.ps1`) will install t
 `npm install -g neovim`                                   
 
 
+#had to use
+git clone https://github.com/pfpduke/pwinvim.git "$env:LOCALAPPDATA\nvim"
+
+#had to change change powershell script permissions
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+
+#Lazy sync needs to be the last thing done in nvim
+
+#needed to install python3
+
+#needed to install :CocInstall coc-snippets
