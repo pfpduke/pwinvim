@@ -1,21 +1,8 @@
 {
-  "powershell.powerShellExePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "powershell.startEditorServicesArgs": [
-    "-ExecutionPolicy", "Bypass",
-    "-NoProfile",
-    "-NonInteractive",
-    "C:\\Users\\User\\AppData\\Local\\coc\\extensions\\node_modules\\coc-powershell\\PowerShellEditorServices\\PowerShellEditorServices\\Start-EditorServices.ps1",
-    "-HostName", "coc.vim",
-    "-HostProfileId", "coc.vim",
-    "-HostVersion", "2.0.0",
-    "-LogPath", "C:\\Users\\User\\AppData\\Local\\coc\\extensions\\node_modules\\coc-powershell\\.pses\\logs\\your_session_id\\log.txt",
-    "-LogLevel", "Normal",
-    "-BundledModulesPath", "C:\\Users\\User\\AppData\\Local\\coc\\extensions\\node_modules\\coc-powershell\\PowerShellEditorServices",
-    "-EnableConsoleRepl",
-    "-SessionDetailsPath", "C:\\Users\\User\\AppData\\Local\\coc\\extensions\\node_modules\\coc-powershell\\.pses\\logs\\your_session_id\\session"
-  ],
-  "powershell.scriptAnalysis.enable": true
+  "powershell.powerShellExePath": "pwsh",
+  "powershell.codeFormatting.useCorrectCasing": false,
+  "powershell.scriptAnalysis.enable": true,
+  "powershell.integratedConsole.showOnStartup": true
 }
-
 
 

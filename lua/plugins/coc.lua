@@ -1,7 +1,14 @@
 return {
     "neoclide/coc.nvim",
     branch = "release",
-    build = "npm ci",
+    build = function()
+        local uv = vim.loop
+        if uv.fs_stat("package-lock.json") then
+            vim.fn.system("npm ci")
+        else
+            vim.fn.system("npm install")
+        end
+    end,
     config = function()
         --Keymap helper
         local mapKey = function(mode, lhs, rhs, opts)

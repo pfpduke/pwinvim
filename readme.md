@@ -1,64 +1,8 @@
-# pwinvim Setup Guide
+# 📦 Applications recommended for a healthy nvim
 
-This will set up Neovim along with all necessary dependencies.
+You can always run :checkhealth inside nvim
 
----
-
-## 1. Install Required Applications
-
-Open **PowerShell** or **Windows Terminal** and run:
-
-```powershell
-irm https://raw.githubusercontent.com/pfpduke/pwinvim/refs/heads/master/powershell/install-apps.ps1 | iex
-```
-
-After it finishes, **change your Windows Terminal font** to a Nerd Font (such as JetBrains Mono Nerd Font).
-
----
-
-## 2. Reopen Terminal and Continue Setup
-
-Close and reopen your terminal, then run:
-
-```powershell
-irm https://raw.githubusercontent.com/pfpduke/pwinvim/refs/heads/master/powershell/Install-PostReboot.ps1 | iex
-```
-
----
-
-## 3. Clone Neovim Config
-
-Now clone the Neovim config repository into your local Neovim folder:
-
-```powershell
-git clone git@github.com:pfpduke/pwinvim.git "$env:LOCALAPPDATA\nvim"
-```
-
-This will place your Neovim configuration where Neovim expects it:  
-`C:\Users\<YourName>\AppData\Local\nvim`
-
----
-
-## 4. Final Neovim Setup
-
-Open Neovim and run the following commands:
-
-```shell
-:lazy sync
-:InstallPSES
-:CocInstall coc-powershell
-:TSInstall powershell
-```
-
-These will install additional plugins and language support for PowerShell development inside Neovim.
-
----
-
-# 📦 Applications Installed by the Scripts
-
-The two scripts (`install-apps.ps1` and `install-postreboot.ps1`) will install the following:
-
-`winget install --id git.git`                              
+`winget install --id git.git`                            
 `winget install --id Microsoft.WindowsTerminal`            
 `winget install --id DEVCOM.JetBrainsMonoNerdFont`         
 `winget install --id DEVCOM.Lua`                          
@@ -71,17 +15,32 @@ The two scripts (`install-apps.ps1` and `install-postreboot.ps1`) will install t
 
 `python.exe -m pip install --upgrade pip`                  
 `python.exe -m pip install pynvim`                        
-`npm install -g neovim`                                   
+`npm install -g neovim`
 
+## 2. Clone repo
 
-#had to use
+Now clone the Neovim config repository into your local Neovim folder:
+
+```powershell
 git clone https://github.com/pfpduke/pwinvim.git "$env:LOCALAPPDATA\nvim"
+```
+This will place your Neovim configuration where Neovim expects it:  
+`C:\Users\<YourName>\AppData\Local\nvim`
 
-#had to change change powershell script permissions
-Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+---
 
-#Lazy sync needs to be the last thing done in nvim
 
-#needed to install python3
+## 4. Final Neovim Setup
 
-#needed to install :CocInstall coc-snippets
+Open Neovim and run the following commands:
+
+```shell
+:lazy sync
+:CocInstall coc-powershell
+:CocInstall coc-snippets
+:CocInstall coc-json
+:TSInstall powershell
+```
+
+                          
+
