@@ -40,5 +40,14 @@ Open Neovim and run the following commands:
 :TSInstall powershell
 ```
 
-                          
+#TODO
+
+Feature | Purpose | Plugin(s)
+
+LSP (Language Server Protocol) | Provides intellisense, go-to-definition, diagnostics, etc. | neovim/nvim-lspconfig
+Autocompletion | Autocompletes Lua code while typing. | hrsh7th/nvim-cmp, hrsh7th/cmp-nvim-lsp
+Snippets | Quick code snippets for faster coding. | L3MON4D3/LuaSnip
+Treesitter | Enhanced syntax highlighting and code navigation. | nvim-treesitter/nvim-treesitter
+Formatter (Optional) | Automatically formats Lua code. | mhartington/formatter.nvim or stevearc/conform.nvim
+Useful Extras | Adds icons, better UI for diagnostics, etc. | nvim-tree/nvim-web-devicons, folke/trouble.nvim
 
