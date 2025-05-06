@@ -2,7 +2,7 @@
   "powershell.powerShellExePath": "pwsh",
   "powershell.codeFormatting.useCorrectCasing": false,
   "powershell.scriptAnalysis.enable": true,
-  "powershell.integratedConsole.showOnStartup": true
+  "powershell.integratedConsole.showOnStartup": false 
 }
 
 
